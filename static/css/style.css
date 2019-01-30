@@ -49,3 +49,12 @@ a:hover {
         font-weight: 700;
     }
 }
+img.logo {
+    background-image: url('static/images/logo.png');
+    height: 1.5rem;
+}
+
+img.logo {
+    background-image: url('file:///E:/github/lawfirm/static/images/logo.png');
+    height: 1.5rem;
+}
