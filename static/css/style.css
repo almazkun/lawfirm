@@ -3,6 +3,8 @@ a {
 }
 a:hover {
     color: inherit;
+    transition: text-color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-decoration: none;
 }
 .jumbotron {
     background-color: transparent;
@@ -10,14 +12,13 @@ a:hover {
 #intro {
     background-color: #000375;
     background-image: linear-gradient(-5deg,#326B83, #000375);
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bg-dblue {
     background-color: #000375;
-    background-image: linear-gradient(-5deg,#326B83, #000375);
+    background-image: linear-gradient(-5deg,#101375, #000375);
 }
 .text-dblue {
     color: #004e89;
@@ -35,22 +36,43 @@ a:hover {
 .bg-dark {
     background-color: #19323c;
 }
-.cor {
+#cor {
     font-family: 'Cormorant Garamond', serif;
 }
 
 .display-5 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2rem;
 }
-@media (min-width:992px) {
+
+@media (min-width:576px) {
     .display-5 {
         font-size: 3rem;
-        font-weight: 700;
     }
 }
+
 img.logo {
-    background-image: url('static/images/logo.png');
     height: 1.5rem;
 }
+
+img.logo-big {
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn-wide {
+    width: 150px;
+    margin-bottom: 0.5em;
+}
+.navbar {
+    padding: .1rem 1rem;
+}
+@media (min-width:576px) {
+    .btn-wide {
+        width: 200px;
+    }
+    .navbar {
+    padding: .5rem 1rem;
+    }
+}
+
 
